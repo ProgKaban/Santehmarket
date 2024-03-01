@@ -19,13 +19,15 @@ export default function Header() {
         <a href="#contacts">Контакты</a>
         <a href="#products">Товары</a>
         <a href="#shop">Магазин</a>
-        <a href="#shop">Почему мы</a>
+        <a href="#shop">Доставка</a>
       </div>
     </div>
-    <div className="social-icons">
-      <a href="#" className="social-icon"><FaInstagram /></a>
-      <a href="#" className="social-icon"><FaVk /></a>
-    </div>
+
+ <div className="social-icons">
+  <a href="#" className="social-icon" style={{ marginTop: '15px' }}><h3>+79141443245</h3></a>
+  <a href="#" className="social-icon"><FaInstagram /></a>
+  <a href="#" className="social-icon"><FaVk /></a>
+</div>
   </div>
   );
 }

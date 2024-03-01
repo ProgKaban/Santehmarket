@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(66, 180, 255);
+    height: 100vh; /* Используйте 100vh для 100% высоты видимой области */
+    color: white;
+  }
+  
+  .wave-container {
+    position: relative;
+    height: 350px;
+  }
+  
+  .editorial {
+    display: block;
+    width: 100%;
+    max-height: 100px;
+    margin: 0;
+    z-index: 5;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    float: left;
+  }
+  
+  .parallax1 > use,
+  .parallax2 > use,
+  .parallax3 > use,
+  .parallax4 > use {
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  
+  .parallax1 > use {
+    animation-name: move-forever1;
+  }
+  
+  .parallax2 > use {
+    animation-name: move-forever2;
+  }
+  
+  .parallax3 > use {
+    animation-name: move-forever3;
+  }
+  
+  .parallax4 > use {
+    animation-name: move-forever4;
+  }
+  
+  @keyframes move-forever1 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  
+  @keyframes move-forever2 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  
+  @keyframes move-forever3 {
+    0% {
+      transform: translate(85px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  
+  @keyframes move-forever4 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  
+  .content-container {
+    position: relative;
+    z-index: 2; /* Установка z-index для контента */
+    text-align: center;
+    padding: 20px;
+    font-size: 24px; /* Устанавливаем базовый размер шрифта для контента */
+    margin-top: 80px; /* Регулируем верхний отступ для адаптации под разные размеры волнового эффекта */
+  }
+  
+  /* Медиа-запрос для адаптации стилей под мобильные устройства */
+  @media (max-width: 768px) {
+    .content-container {
+      font-size: 15px; /* Уменьшаем размер шрифта для мобильных устройств */
+      margin-top: 40px; /* Изменяем верхний отступ для мобильных устройств */
+    }
+  }

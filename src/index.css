@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow-x: hidden; /* Запретить горизонтальный скролл */
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,7 @@ body {
 .header-container {
   background-color:rgb(66, 180, 255);
   padding: 20px;
-  
+
   color: white;
   display: flex;
   justify-content: space-between;
@@ -61,6 +61,7 @@ body {
   color: white;
   margin-left: 10px;
   font-size: 40px;
+  text-decoration: none;
 }
 
 
@@ -88,35 +89,42 @@ body {
 }
 
 
-
-
-
+.logo {
+  padding: 8px 18px; /* Отступы внутри обводки */
+  border-radius: 10px; /* Закругляем углы обводки (замените на желаемый радиус) */
+  display: inline-block; /* Делаем блочный элемент, чтобы обводка окружала только текст */
+  outline: 4px solid white; /* Цвет обводки (замените на желаемый цвет) */
+}
 
 .logo a {
-  text-decoration: none; /* Убираем подчеркивание */
-  color: white; /* Цвет ссылки (замените на желаемый цвет) */
+  text-decoration: none;
+  color: white;
 }
 
 .logo a:hover {
-  color: grey; /* Цвет при наведении (замените на желаемый цвет) */
+  color: grey;
 }
 
 
 
 
-/* Welcome.css */
+
+
+
+
+
 
 /* Ваш файл стилей (например, App.css) */
 .welcome-container {
   position: relative;
   background-color: rgb(66, 180, 255);
-  height: 800px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .welcome-container h2,
@@ -137,7 +145,6 @@ body {
   left: 0;
   width: 100%;
   height: 15%; /* Высота зазубренной части */
-  z-index: 1;
   background-color: #ffffff;
   clip-path: polygon(
     0% 100%, 5% 0%, 10% 100%, 15% 0%, 20% 100%, 25% 0%, 30% 100%, 35% 0%,
@@ -150,13 +157,51 @@ body {
   .welcome-container h2,
   .welcome-container h1,
   .welcome-container p {
-    font-size: 20px;
+    font-size: 15px;
   }
   .welcome-container::before {
     height: 30px ;
   }
   
 }
+
+
+
+
+
+.delivery-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column; /* Располагаем элементы в колонке */
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.delivery-icon {
+  margin-bottom: 10px; /* Отступ между иконкой и текстом */
+}
+
+.delivery-text {
+  color: rgb(66, 180, 255); /* Цвет текста сделали синим */
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .delivery-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .footer-container {
@@ -169,6 +214,7 @@ body {
   .organization-info {
     flex: 1;
     padding: 0 20px;
+    color: black;
   }
   
   .map-container {
