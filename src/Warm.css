@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(66, 180, 255);
     height: 100vh; /* Используйте 100vh для 100% высоты видимой области */
     color: white;
   }
@@ -9,6 +8,7 @@ body {
   .wave-container {
     position: relative;
     height: 350px;
+    background-color: rgb(66, 180, 255);
   }
   
   .editorial {
@@ -93,13 +93,13 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 24px; /* Устанавливаем базовый размер шрифта для контента */
-    margin-top: 80px; /* Регулируем верхний отступ для адаптации под разные размеры волнового эффекта */
+
   }
   
   /* Медиа-запрос для адаптации стилей под мобильные устройства */
   @media (max-width: 768px) {
     .content-container {
       font-size: 15px; /* Уменьшаем размер шрифта для мобильных устройств */
-      margin-top: 40px; /* Изменяем верхний отступ для мобильных устройств */
+     
     }
   }

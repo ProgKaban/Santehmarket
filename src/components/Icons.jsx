@@ -33,6 +33,34 @@ const Icons = () => {
             <h3 className="card__heading">Мебель</h3>
           </div>
         </a>
+        <a className="card" href="#">
+          <div className="card__background" style={{backgroundImage: "url(https://avatars.mds.yandex.net/i?id=6671deae2073d2aaea54ca897a1c243a-5524638-images-thumbs&n=13"}}></div>
+          <div className="card__content">
+       
+            <h3 className="card__heading">Санфаяс</h3>
+          </div>
+        </a>
+        <a className="card" href="#">
+          <div className="card__background" style={{backgroundImage: "url(https://avatars.mds.yandex.net/i?id=22beb8d8cc2de612fc9f225d142ce8b48c78bd94-10199799-images-thumbs&n=13"}}></div>
+          <div className="card__content">
+       
+            <h3 className="card__heading">Акссесуары</h3>
+          </div>
+        </a>
+        <a className="card" href="#">
+          <div className="card__background" style={{backgroundImage: "url(https://vanna-store.ru/image/cache/catalog/products/18/68/18684104373a667ecbc102af691895e4-700x700.jpg"}}></div>
+          <div className="card__content">
+       
+            <h3 className="card__heading">Душевые системы</h3>
+          </div>
+        </a>
+        <a className="card" href="#">
+          <div className="card__background" style={{backgroundImage: "url(https://www.cleangoods.ru/upload/iblock/407/rkc13mog2ap43g2bnxyh5qgkdtbmb94t.jpg"}}></div>
+          <div className="card__content">
+       
+            <h3 className="card__heading">Душевые углы</h3>
+          </div>
+        </a>
       </div>
     </section>
   );

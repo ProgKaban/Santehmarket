@@ -58,9 +58,9 @@ const Form = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="formb">
       <div className="max-width-form">
-        <h2>Форма ввода</h2>
+        <h2>Обратная свзяь</h2>
         <form onSubmit={handleSubmit} className="custom-form">
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Имя:</label>
