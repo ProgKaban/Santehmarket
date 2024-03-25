@@ -85,7 +85,12 @@ body {
   .social-icons {
     display: none;
   }
-
+  /* Убираем изменение размера при наведении для ссылок */
+  .nav a:hover,
+  .nav-links a:hover {
+    transform: none;
+    color: grey;
+  }
 }
 
 
@@ -196,18 +201,6 @@ content: '';
 
 
 
-button::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  border: 6px solid rgb(66, 180, 255);
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
-}
 
 button:hover::after, button:focus::after {
   animation: none;
