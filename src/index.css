@@ -67,7 +67,6 @@ body {
 
 
 
-/* Media query for mobile devices */
 @media (max-width: 668px) {
   .menu-icon {
     display: block;
@@ -78,9 +77,18 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 100%; /* Разместим панель под логотипом */
+    left: 0;
+    width: 100%; /* Займет всю ширину экрана */
+    background-color:rgb(66, 180, 255);
+    z-index: 1000; /* Установим высокий z-index, чтобы панель была поверх остального содержимого */
+    transition: transform 0.3s ease; /* Добавим плавное анимированное появление */
+    transform: translateY(-100%); /* Скрываем панель навигации над логотипом */
   }
   .nav-links.open {
     display: flex;
+    transform: translateY(0); /* Показываем панель навигации при ее открытии */
   }
   .social-icons {
     display: none;

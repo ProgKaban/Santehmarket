@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { getFirestore, collection, getDocs, doc, deleteDoc } from 'firebase/firestore'; // Импортируем функцию 'doc'
+import { getFirestore, collection, getDocs, doc, deleteDoc, onSnapshot } from 'firebase/firestore'; // Импортируем функцию 'doc'
 
 // Замените на свои конфигурационные данные Firebase
 const firebaseConfig = {
@@ -17,4 +17,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const firestore = getFirestore(app);
 
-export { app, auth, firestore, collection, getDocs, doc, deleteDoc }; // Экспортируем необходимые функции
+export { app, auth, firestore, collection, getDocs, doc, deleteDoc, onSnapshot }; // Экспортируем необходимые функции

@@ -3,7 +3,7 @@ import '../Warm.css'; // Подключаем стили
 
 const Warm = () => {
   return (
-    <div className="wave-container">
+    <div id="shop" className="wave-container">
       <svg className="editorial"
            xmlns="http://www.w3.org/2000/svg"
            xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -35,7 +35,7 @@ const Warm = () => {
       <div className="content-container">
         <h2>Добро пожаловать</h2>
         <h1>Компания САНТЕХМАРКЕТ</h1>
-        <p>Здесь будет описание того чем занимается магазин</p>
+        <p>Большой выбор сантехники</p>
       </div>
     </div>
   );

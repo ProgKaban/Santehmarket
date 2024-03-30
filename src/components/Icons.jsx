@@ -3,7 +3,7 @@ import '../Icons.css'; // Подключаем ваши стили
 
 const Icons = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="shop">
       <div className="card-grid">
         <a className="card" href="#">
           <div className="card__background" style={{backgroundImage: "url(https://avatars.mds.yandex.net/i?id=82e314cce3bdb1c7168d61ffc83be172b1ae52f1-10918661-images-thumbs&n=13)"}}></div>

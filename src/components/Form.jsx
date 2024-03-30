@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import InputMask from 'react-input-mask';
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 
 const Form = () => {
@@ -33,6 +33,7 @@ const Form = () => {
         const docRef = await addDoc(collection(db, 'Clients'), {
           name,
           phoneNumber,
+          createdAt: serverTimestamp() // Добавляем текущую дату и время
         });
 
         console.log('Документ записан с ID: ', docRef.id);

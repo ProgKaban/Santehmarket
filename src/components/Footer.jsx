@@ -23,9 +23,9 @@ export default function Footer() {
     <footer id="contacts" className="footer-container">
       <div className="organization-info">
         <h3>Сантехмаркет</h3>
-        <p>Контактный номер телефона: +7 914-144-32-45</p>
+        <p>Контактный номер телефона: +7 914-451-08-21</p>
         <p>Почта: santehmarket@bk.ru</p>
-        <p>Оставайтесь лучшими вместе с нами!</p>
+     
       </div>
       <div className="map-container">
         
